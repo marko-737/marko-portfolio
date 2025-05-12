@@ -31,10 +31,6 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
           <div className="relative w-32 h-32 md:w-40 md:h-40 overflow-hidden rounded-full border-4 border-blue-500 shadow-xl">
-            {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600" /> */}
-            {/* <div className="absolute inset-0 flex items-center justify-center text-white text-3xl md:text-4xl font-bold">
-              MK
-            </div> */}
             <img
               src="src/assets/marko.jpg"
               alt="Profile"
