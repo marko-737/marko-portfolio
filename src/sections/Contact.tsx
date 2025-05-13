@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
+
+const serviceId = "service_hbapu8d";
+const templateId = "template_aatij9o";
+const publicKey = "66PSODXwz3mlF_qnT";
 
 interface FormState {
   name: string;
@@ -12,6 +17,11 @@ interface FormErrors {
   name?: string;
   email?: string;
   message?: string;
+}
+
+interface EmailJSResponse {
+  status: number;
+  text: string;
 }
 
 const Contact: React.FC = () => {
@@ -66,30 +76,55 @@ const Contact: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (validateForm()) {
       setIsSubmitting(true);
+      setSubmitError(false);
+      setSubmitSuccess(false);
 
-      // Simulate form submission with a timeout
-      setTimeout(() => {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      };
+
+      try {
+        const response: EmailJSResponse = await emailjs.send(
+          serviceId,
+          templateId,
+          templateParams,
+          publicKey
+        );
+
+        if (response.status === 200) {
+          setIsSubmitting(false);
+          setSubmitSuccess(true);
+
+          // Reset form after successful submission
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            setSubmitSuccess(false);
+          }, 5000);
+        } else {
+          setIsSubmitting(false);
+          setSubmitError(true);
+          console.error("EmailJS error:", response.text);
+        }
+      } catch (error: unknown) {
         setIsSubmitting(false);
-        setSubmitSuccess(true);
-
-        // Reset form after successful submission
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          setSubmitSuccess(false);
-        }, 5000);
-      }, 1500);
+        setSubmitError(true);
+        console.error("EmailJS error:", error);
+      }
     }
   };
 
