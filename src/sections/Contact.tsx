@@ -200,11 +200,12 @@ const Contact: React.FC = () => {
 
             <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-700">
               <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-4">
-                Available for freelance projects
+                Available for new projects
               </h4>
               <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-                I'm currently available for freelance work and new
-                opportunities. Let's build something amazing together!
+                I'm currently available for full time, remote jobs, freelance
+                work and new opportunities. Let's build something amazing
+                together!
               </p>
               <div className="flex space-x-4">
                 <a
