@@ -158,21 +158,21 @@ const Skills: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   const frontendSkills: Skill[] = [
-    { name: "JavaScript", level: 90, color: "bg-yellow-500" },
-    { name: "TypeScript", level: 85, color: "bg-blue-500" },
-    { name: "React", level: 92, color: "bg-cyan-500" },
-    { name: "Vue", level: 75, color: "bg-green-500" },
-    { name: "HTML5", level: 95, color: "bg-orange-500" },
+    { name: "JavaScript", level: 80, color: "bg-yellow-500" },
+    { name: "TypeScript", level: 75, color: "bg-blue-500" },
+    { name: "React", level: 85, color: "bg-cyan-500" },
+    { name: "Angular", level: 70, color: "bg-green-500" },
+    { name: "HTML5", level: 90, color: "bg-orange-500" },
     { name: "CSS3/SCSS", level: 88, color: "bg-purple-500" },
   ];
 
   const otherSkills: Skill[] = [
-    { name: "Node.js", level: 80, color: "bg-green-600" },
-    { name: "GraphQL", level: 75, color: "bg-pink-500" },
-    { name: "Git", level: 85, color: "bg-red-500" },
+    { name: "Problem solving", level: 80, color: "bg-green-600" },
+    { name: "Time Management", level: 85, color: "bg-pink-500" },
+    { name: "Teamwork & Collaboration", level: 85, color: "bg-red-500" },
     { name: "UI/UX Design", level: 78, color: "bg-indigo-500" },
     { name: "Performance Optimization", level: 82, color: "bg-amber-500" },
-    { name: "Testing (Jest, Cypress)", level: 76, color: "bg-emerald-500" },
+    { name: "Learning Agility:", level: 88, color: "bg-emerald-500" },
   ];
 
   const renderSkill = (skill: Skill) => (
@@ -236,18 +236,14 @@ const Skills: React.FC = () => {
             </h3>
             <div className="flex flex-wrap gap-3">
               {[
-                "Webpack",
                 "Vite",
-                "Redux",
-                "Next.js",
+                "Zustand",
+                "Reactjs",
                 "Figma",
                 "Tailwind CSS",
-                "SASS",
                 "Material UI",
-                "Bootstrap",
+                "AntDesign",
                 "Firebase",
-                "AWS",
-                "Docker",
               ].map((tool) => (
                 <span
                   key={tool}

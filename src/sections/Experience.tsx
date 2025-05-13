@@ -33,7 +33,7 @@ const Experience: React.FC = () => {
       location: "Belgrade, Serbia",
       period: "Nov 2022 - Aug 2023",
       description: [
-        "Developed pages, components, and forms using Angular 14, PrimeNG, RxJS, and NgRx for the Pando Mission Control platform",
+        "Developed pages, components, and forms using Angular 14, PrimeNG, RxJS, and NgRx for the Pando Mission Control Gaming platform",
         "Implemented responsive UI elements that improved client usability, focusing on real-time data insights and SKU management for global retail markets.",
         "Participated in agile development process, including daily standups, sprint planning, and retrospectives.",
       ],
@@ -45,7 +45,7 @@ const Experience: React.FC = () => {
       location: "Belgrade, Serbia",
       period: "Oct 2020 - Nov 2022",
       description: [
-        "Worked on several web applications using React, Tailwind, Material UI, SCSS, and Redux Toolkit across diverse domains including education, internal tools, and promotional platforms.",
+        "Worked on several web applications across diverse domains including education, internal tools, and promotional platforms.",
         "Built responsive UI components and complete pages, ensuring optimal performance and accessibility across devices.",
         "Collaborated in teams of 3 to 7 members to implement features, fix complex layout issues, and optimize user interfaces.",
         "Integrated with backend APIs, managed state using Redux, and improved performance through caching and design refinements.",

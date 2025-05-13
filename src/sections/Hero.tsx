@@ -13,10 +13,13 @@ import {
 import Container from "src/components/Container";
 
 const socialLinks = [
-  { icon: <Github size={20} />, href: "https://github.com" },
-  { icon: <Linkedin size={20} />, href: "https://linkedin.com" },
+  { icon: <Github size={20} />, href: "https://github.com/marko-737" },
+  {
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/in/marko-kostic1307/",
+  },
   { icon: <Twitter size={20} />, href: "https://twitter.com" },
-  { icon: <Mail size={20} />, href: "mailto:contact@example.com" },
+  { icon: <Mail size={20} />, href: "mailto:tomarkokostic@gmail.com" },
 ];
 
 const Hero: React.FC = () => {
