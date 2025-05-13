@@ -9,16 +9,12 @@ function useScrollSpy() {
       const scrollPosition = window.scrollY;
       setScrolled(scrollPosition > 50);
 
-      // Determine active section
       const sections = document.querySelectorAll("section[id]");
 
       sections.forEach((section) => {
         const sectionTop = (section as HTMLElement).offsetTop - 100;
         const sectionHeight = (section as HTMLElement).offsetHeight;
         const sectionId = section.getAttribute("id") || "";
-
-        // Optional: You can remove this console log in your final hook
-        console.log(`Section: ${sectionId}`);
 
         if (
           scrollPosition >= sectionTop &&
