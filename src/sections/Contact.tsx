@@ -291,11 +291,11 @@ const Contact: React.FC = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-4 py-2 border ${
+                    className={`input-style ${
                       errors.name
                         ? "border-red-500 dark:border-red-400"
                         : "border-gray-300 dark:border-gray-600"
-                    } rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors`}
+                    } `}
                     placeholder="John Doe"
                   />
                   {errors.name && (
@@ -318,11 +318,11 @@ const Contact: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-4 py-2 border ${
+                    className={`input-style ${
                       errors.email
                         ? "border-red-500 dark:border-red-400"
                         : "border-gray-300 dark:border-gray-600"
-                    } rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors`}
+                    } `}
                     placeholder="john@example.com"
                   />
                   {errors.email && (
@@ -346,7 +346,7 @@ const Contact: React.FC = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors"
+                  className="input-style"
                   placeholder="Project Inquiry"
                 />
               </div>
@@ -364,11 +364,11 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className={`w-full px-4 py-2 border ${
+                  className={`input-style ${
                     errors.message
                       ? "border-red-500 dark:border-red-400"
                       : "border-gray-300 dark:border-gray-600"
-                  } rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition-colors`}
+                  } `}
                   placeholder="Your message here..."
                 />
                 {errors.message && (
