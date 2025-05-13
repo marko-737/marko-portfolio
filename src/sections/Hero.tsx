@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
             variants={imageVariants}
           >
             <img
-              src="src/assets/images/marko.jpg"
+              src="/images/marko.jpg"
               alt="Profile"
               className="w-full h-full object-cover rounded-full"
             />

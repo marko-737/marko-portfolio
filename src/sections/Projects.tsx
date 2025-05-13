@@ -23,7 +23,7 @@ const projects: Project[] = [
     title: "English for Aviation Website",
     description:
       "Website provides ICAO-compliant English training for aviation professionals, including pilots, air traffic controllers, and cabin crew. ",
-    image: "src/assets/images/aviation-english.png",
+    image: "/images/aviation-english.png",
     tags: ["React", "CSS", "EmailJS", "Responsive Design"],
     demoUrl: "https://englishforaviation-icao.com/",
     codeUrl: "https://github.com/marko-737/aviation-english",
@@ -33,7 +33,7 @@ const projects: Project[] = [
     title: "Iphone 15 pro",
     description:
       "A responsive showcase website for the iPhone 15 Pro, built to highlight key features and sleek design using modern web technologies",
-    image: "src/assets/images/apple-website.png",
+    image: "/images/apple-website.png",
     tags: ["React", "Tailwind", "GSAP", "React Three Fiber"],
     demoUrl: "https://website-iphone-15-pro.netlify.app",
     codeUrl: "https://github.com/marko-737/apple-website/tree/main",
@@ -43,7 +43,7 @@ const projects: Project[] = [
     title: "Movie rating app",
     description:
       "Movie rating application that allows users to browse, rate, and review movies",
-    image: "src/assets/images/movie-rating-app.png",
+    image: "/images/movie-rating-app.png",
     tags: ["React", "Typescript", "CSS", "React-Query"],
     demoUrl: "https://movie-tvshow-rating-app.netlify.app/",
     codeUrl: "https://github.com/marko-737/movie-rating-app",
@@ -53,7 +53,7 @@ const projects: Project[] = [
     title: "English Placement Test",
     description:
       "Application allows users to assess their English language proficiency by answering multiple-choice questions",
-    image: "src/assets/images/english-placement-test.png",
+    image: "/images/english-placement-test.png",
     tags: ["React", "MaterialUI", "EmailJS"],
     demoUrl: "https://english-placement-test.netlify.app/",
     codeUrl: "https://github.com/marko-737/english-test-quiz",
@@ -63,7 +63,7 @@ const projects: Project[] = [
     title: "Prescripto doctor app",
     description:
       "Prescripto is a healthcare app that simplifies booking doctor appointments and managing health records, providing users with a seamless and efficient medical experience",
-    image: "src/assets/images/prescripto-app.png",
+    image: "/images/prescripto-app.png",
     tags: ["React", "Tailwind", "ContextAPI", "Axios"],
     demoUrl: "https://prescripto-doctorapp.netlify.app/",
     codeUrl: "https://github.com/marko-737/Prescripto-app",
@@ -73,7 +73,7 @@ const projects: Project[] = [
     title: "React Chat App",
     description:
       "This is a real-time chat application built with React, utilizing Firebase for backend services. The app is designed for seamless communication and includes features like user authentication and messaging",
-    image: "src/assets/images/react-chat-app.png",
+    image: "/images/react-chat-app.png",
     tags: ["React", "Tailwind", "DaisyUI", "Firebase"],
     demoUrl: "https://reactchat-app1.netlify.app/chat",
     codeUrl: "https://github.com/marko-737/react-chat-app",
