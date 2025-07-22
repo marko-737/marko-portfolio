@@ -30,6 +30,16 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "StoreIt",
+    description:
+      "Store It is a modern, secure, and user-friendly file management web app. It allows users to upload, organize, and share files seamlessly.",
+    image: "/images/storeit.png",
+    tags: ["React 19", "Next.js 15", "Appwrite", "Tailwind"],
+    demoUrl: "https://store-it-app.netlify.app/",
+    codeUrl: "https://github.com/marko-737/storage-management",
+  },
+  {
+    id: 3,
     title: "Iphone 15 pro",
     description:
       "A responsive showcase website for the iPhone 15 Pro, built to highlight key features and sleek design using modern web technologies",
@@ -39,7 +49,7 @@ const projects: Project[] = [
     codeUrl: "https://github.com/marko-737/apple-website/tree/main",
   },
   {
-    id: 3,
+    id: 4,
     title: "Movie rating app",
     description:
       "Movie rating application that allows users to browse, rate, and review movies",
@@ -49,7 +59,7 @@ const projects: Project[] = [
     codeUrl: "https://github.com/marko-737/movie-rating-app",
   },
   {
-    id: 4,
+    id: 5,
     title: "English Placement Test",
     description:
       "Application allows users to assess their English language proficiency by answering multiple-choice questions",
@@ -59,7 +69,7 @@ const projects: Project[] = [
     codeUrl: "https://github.com/marko-737/english-test-quiz",
   },
   {
-    id: 5,
+    id: 6,
     title: "Prescripto doctor app",
     description:
       "Prescripto is a healthcare app that simplifies booking doctor appointments and managing health records, providing users with a seamless and efficient medical experience",
@@ -69,7 +79,7 @@ const projects: Project[] = [
     codeUrl: "https://github.com/marko-737/Prescripto-app",
   },
   {
-    id: 6,
+    id: 7,
     title: "React Chat App",
     description:
       "This is a real-time chat application built with React, utilizing Firebase for backend services. The app is designed for seamless communication and includes features like user authentication and messaging",
