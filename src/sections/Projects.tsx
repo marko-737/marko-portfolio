@@ -42,7 +42,7 @@ const projects: Project[] = [
     id: 3,
     title: "Iphone 15 pro",
     description:
-      "A responsive showcase website for the iPhone 15 Pro, built to highlight key features and sleek design using modern web technologies",
+      "This is a clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP (Greensock Animations) and Three.js for displaying iPhone 15 Pro models in various colors and shapes.",
     image: "/images/apple-website.png",
     tags: ["React", "Tailwind", "GSAP", "React Three Fiber"],
     demoUrl: "https://website-iphone-15-pro.netlify.app",
