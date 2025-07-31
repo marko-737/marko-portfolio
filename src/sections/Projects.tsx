@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import { ExternalLink, Github } from "lucide-react";
-import ProjectCard from "src/components/Project/ProjectCard";
 import FilterButtons from "src/components/Project/FilterButtons";
 import ProjectList from "src/components/Project/ProjectList";
-import ProjectHeader from "src/components/Project/ProjectHeader";
 import SectionHeader from "src/components/SectionHeader";
 import Container from "src/components/Container";
 
@@ -30,6 +27,25 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Resumind",
+    description:
+      "AI-powered Resume provides users with insights and suggestions to improve their resumes using AI technology.",
+    image: "/images/ai-resume-analyzer.png",
+    tags: [
+      "React",
+      "React Router",
+      "Puter.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Vite",
+      "Zustand",
+      "AI",
+    ],
+    demoUrl: "https://ai-resume-analyzeer.netlify.app/",
+    codeUrl: "https://github.com/marko-737/ai-resume-analyzer",
+  },
+  {
+    id: 3,
     title: "StoreIt",
     description:
       "Store It is a modern, secure, and user-friendly file management web app. It allows users to upload, organize, and share files seamlessly.",
@@ -39,7 +55,7 @@ const projects: Project[] = [
     codeUrl: "https://github.com/marko-737/storage-management",
   },
   {
-    id: 3,
+    id: 4,
     title: "Iphone 15 pro",
     description:
       "This is a clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP (Greensock Animations) and Three.js for displaying iPhone 15 Pro models in various colors and shapes.",
@@ -49,7 +65,7 @@ const projects: Project[] = [
     codeUrl: "https://github.com/marko-737/apple-website/tree/main",
   },
   {
-    id: 4,
+    id: 5,
     title: "Movie rating app",
     description:
       "Movie rating application that allows users to browse, rate, and review movies",
@@ -59,7 +75,7 @@ const projects: Project[] = [
     codeUrl: "https://github.com/marko-737/movie-rating-app",
   },
   {
-    id: 5,
+    id: 6,
     title: "English Placement Test",
     description:
       "Application allows users to assess their English language proficiency by answering multiple-choice questions",
@@ -69,7 +85,7 @@ const projects: Project[] = [
     codeUrl: "https://github.com/marko-737/english-test-quiz",
   },
   {
-    id: 6,
+    id: 7,
     title: "Prescripto doctor app",
     description:
       "Prescripto is a healthcare app that simplifies booking doctor appointments and managing health records, providing users with a seamless and efficient medical experience",
@@ -79,7 +95,7 @@ const projects: Project[] = [
     codeUrl: "https://github.com/marko-737/Prescripto-app",
   },
   {
-    id: 7,
+    id: 8,
     title: "React Chat App",
     description:
       "This is a real-time chat application built with React, utilizing Firebase for backend services. The app is designed for seamless communication and includes features like user authentication and messaging",
